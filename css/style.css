@@ -1,0 +1,294 @@
+.parent {
+    width: 100%;
+    height: 100%;
+}
+.parent-image {
+    width: 100%;
+    height: 100%;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+* {box-sizing: border-box;}
+
+html {
+scroll-behavior: smooth;
+}
+
+.parallax {
+  background-image: url("../img/profile.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: transparent;
+  padding: 20px 10px;
+  padding-inline-start: 20px;
+  position: fixed;
+  width: 100%;
+}   
+
+#navbar a {
+  float: left;
+  color: dodgerblue;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #logo {
+  font-size: 30px;
+  padding-inline-start: 100px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar-right {
+  float: right;
+  padding-inline-end: 100px;
+}
+
+#navbar-right a {
+  width: 110px;
+}
+
+#navbar-right a:hover {
+  background-color: dodgerblue;
+  color: white;
+  animation-name: expand-width;
+  animation-duration: 1s;
+}
+@keyframes expand-width {
+  from {width: 110px;}
+  to {width: 150px;}
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	
+	border-radius:50px;
+	text-align:center;
+}
+
+.my-float{
+	margin-top:15px;
+}
+
+#navbar-right a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#about {
+  padding: 5%;
+  height: auto;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+}
+
+#skills {
+  padding: 5%;
+  height: auto;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+}
+
+#projects {
+  padding: 5%;
+  height: auto;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-bottom: 30px;
+  padding: 5%;
+  background-color: white;
+}
+
+.column-about-1 {
+  float: left;
+  width: 25%;
+}
+
+.column-about-2 {
+  float: left;
+  width: 25%;
+}
+
+.column-about-3 {
+  float: left;
+  width: 50%;
+}
+
+.column {
+  float: left;
+  width: 23.33%;
+  margin: 5%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  float: left;
+  padding: 20px ;
+  border-radius: 25px;
+  width: 20%; 
+}
+
+.rounded {
+  border-radius: 25px;
+}
+
+.title-s{
+  font-weight: bold;
+  font-size: large;
+}
+
+.title-styles{
+  font-size: large;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.des{
+  font-weight: lighter;
+  font-size: medium;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.box {
+  float: left;
+  width: 25%;
+  height: auto;
+}
+.aboutme {
+  float: left;
+  width: 50%;
+  height: auto;
+  padding: 0%;
+}
+
+.font-italic {
+  font-style: italic !important;
+  font-size: 20px;
+  font-weight: 1% !important;
+}
+
+
+@media screen and (max-width: 900px) {
+  .container {
+    float: initial;
+    width: 50%;
+    padding: 20px ;
+    border-radius: 30px;
+  }
+  .box {
+    float: right;
+    width: 50%;
+    padding: 5%;
+    height: auto;
+  }
+  .column {
+    float: left;
+    width: 90%;
+    margin: 5%;
+  }
+  .aboutme {
+    float: inherit;
+    width: 100%;
+    height: auto;
+    padding: 0%;
+  }
+  .column-about-1 {
+    float: left;
+    width: 50%;
+  }
+
+  .column-about-2 {
+    float: left;
+    width: 50%;
+  }
+
+  .column-about-3 {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #navbar {
+    float: none;
+    display: none;
+    text-align: none;
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+  }
+  .column-about-1{
+    width: 100%;
+  }
+  .column-about-2{
+    width: 100%;
+  }
+  .column-about-3{
+    width: 100%;
+  }
+  .parent-image {
+    width: 100%;
+    height: 50%;
+  }
+  #navbar-right a:hover {
+    width: 0px;
+    height: 0px;
+  }
+  .container {
+    float: initial;
+    width: 50%;
+    padding: 20px ;
+    border-radius: 30px;
+  }
+  .box {
+    float: initial;
+    width: 100%;
+    height: auto;
+  }
+  .aboutme {
+    float: initial;
+    width: 100%;
+    height: auto;
+    padding: 0%;
+  }
+}
