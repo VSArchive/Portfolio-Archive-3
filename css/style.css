@@ -288,13 +288,13 @@ input[type=submit]:hover {
 }
 
 .fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 60%;
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 60%;
 }
 
 .fa:hover {
@@ -383,5 +383,10 @@ input[type=submit]:hover {
         width: 100%;
         height: auto;
         padding: 0%;
+    }
+    .contact-column {
+        float: left;
+        width: 90%;
+        margin: 5%;
     }
 }
