@@ -133,6 +133,10 @@ body {
   	margin-top:15px;
 }
 
+.my-float:hover{
+  	color: red;
+}
+
 #navbar-right a.active {
     background-color: dodgerblue;
     color: white;
@@ -153,6 +157,13 @@ body {
 }
 
 #projects {
+    padding: 5%;
+    height: auto;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+}
+
+#contact {
     padding: 5%;
     height: auto;
     width: 100%;
@@ -186,6 +197,36 @@ body {
     float: left;
     width: 23.33%;
     margin: 5%;
+}
+
+.contact-column {
+    float: left;
+    width: 40%;
+    margin: 5%;
+}
+
+input[type=text], select, textarea, .email {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: dodgerblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(0, 80, 160);
 }
 
 .row:after {
@@ -246,6 +287,19 @@ body {
     font-weight: 1% !important;
 }
 
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 60%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
 
 @media screen and (max-width: 900px) {
     .container {

@@ -17,22 +17,33 @@ function home() {
     document.getElementById("home-n").classList.add('active');
     document.getElementById("skills-n").classList.remove('active');
     document.getElementById("projects-n").classList.remove('active');
+    document.getElementById("contact-n").classList.remove('active');
 }
 function about() {
     document.getElementById("about-n").classList.add('active');
     document.getElementById("home-n").classList.remove('active');
     document.getElementById("skills-n").classList.remove('active');
     document.getElementById("projects-n").classList.remove('active');
+    document.getElementById("contact-n").classList.remove('active');
 }
 function skills() {
     document.getElementById("about-n").classList.remove('active');
     document.getElementById("home-n").classList.remove('active');
     document.getElementById("skills-n").classList.add('active');
     document.getElementById("projects-n").classList.remove('active');
+    document.getElementById("contact-n").classList.remove('active');
 }
 function projects() {
     document.getElementById("about-n").classList.remove('active');
     document.getElementById("home-n").classList.remove('active');
     document.getElementById("skills-n").classList.remove('active');
     document.getElementById("projects-n").classList.add('active');
+    document.getElementById("contact-n").classList.remove('active');
+}
+function contact() {
+    document.getElementById("contact-n").classList.add('active');
+    document.getElementById("about-n").classList.remove('active');
+    document.getElementById("home-n").classList.remove('active');
+    document.getElementById("skills-n").classList.remove('active');
+    document.getElementById("projects-n").classList.remove('active');
 }

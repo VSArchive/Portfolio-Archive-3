@@ -5,7 +5,7 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="js/style.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/gif/png" href="img/profile-no-bg.png">
 
     <title>
@@ -22,11 +22,12 @@
             <a id="skills-n" href="#skills" onclick="skills()">Skills</a>
             <a id="projects-n" href="#projects" onclick="projects()">Projects</a>
             <a href="http://vineelsai5439.github.io/resume">Resume</a>
+            <a id="contact-n" href="#contact" onclick="contact()">Contact</a>
         </div>
     </div>
 
     <a id="fab" href="#home" class="float">
-        <i class="fa fa-arrow-up my-float"></i>
+        <i class="my-float fa fa-arrow-up"></i>
     </a>
 
     <div onfocus="home()" onmouseover="home()" id="home" class="parallax">
@@ -120,6 +121,46 @@
                 <ul>
                     <li><a href="https://github.com/vineelsai5439/vineelsai5439.github.io">This Website</a></li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <div onfocus="contact()" onmouseover="contact()" id="contact" style="margin-top: 0px; padding-top: 0px;">
+        <div>
+            <h3 class="title" style="text-align: center; margin-top: 0px; margin-bottom: 0px; padding-top: 0px;">
+                Contact
+            </h3>
+            <p class="font-italic" style="text-align: center; padding: 0px; margin-top: 0px;">Hear is the way to contact me.</p>
+        </div>
+        <div class="row card title-skills rounded">
+            <div class="contact-column">
+                <form name="contact-form" netlify>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Name">
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" class="email">
+                
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit" >
+                </form>
+            </div>
+            <div class="contact-column">
+                <p class="title" style="margin-top: 0px;">
+                    Get in touch
+                </p>
+                <p class="font-italic" style="margin: 15px;">
+                    I am an undergraduate at <a href="https://iiitkalyani.ac.in">IIIT
+                        Kalyani</a>, pursuing
+                    Bachelors in Computer
+                    Science and Engineering.
+                </p>
+                <a href="https://www.facebook.com/vineelsai5439" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com/vineelsai5439" class="fa fa-twitter"></a>
+                <a href="https://in.linkedin.com/in/vineelsai5439" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/vineelsai5439" class="fa fa-instagram"></a>
             </div>
         </div>
     </div>
