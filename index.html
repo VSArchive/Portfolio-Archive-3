@@ -83,7 +83,7 @@
                 <li>Css</li>
                 <li>Java Script</li>
                 <li>git</li>
-                <li>Android</li>
+                <li>Android Development</li>
             </ul>
         </div>
     </div>
@@ -99,7 +99,7 @@
         </div>
 
         <div class="row">
-            <div class="column card rounded des">
+            <div class="column-projects card rounded des">
                 <h2>Android</h2>
                 <ul>
                     <li><a href="https://github.com/vineelsai5439/Tic-Tac-Toe">Tic Tac Toe</a></li>
@@ -109,14 +109,14 @@
                     <li><a href="https://github.com/vineelsai5439/Tasks">Tasks</a></li>
                 </ul>
             </div>
-            <div class="column card rounded des">
+            <div class="column-projects card rounded des">
                 <h2>Python</h2>
                 <ul>
                     <li><a href="https://github.com/vineelsai5439/Find-Temperature">Find Temperature</a></li>
                     <li><a href="https://github.com/vineelsai5439/ADB-Exploit">ADB Exploit</a></li>
                 </ul>
             </div>
-            <div class="column card rounded des">
+            <div class="column-projects card rounded des">
                 <h2>Web</h2>
                 <ul>
                     <li><a href="https://github.com/vineelsai5439/vineelsai5439.github.io">This Website</a></li>
@@ -135,16 +135,16 @@
         </div>
         <div class="row card title-skills rounded">
             <div class="contact-column">
-                <form name="contact-form" netlify>
+                <form action="mail.php" method="get" name="contact-form">
                     <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" class="email">
+                    <input type="email" id="email" name="email" placeholder="Email" class="email" required>
 
                     <label for="subject">Subject</label>
                     <textarea id="subject" name="subject" placeholder="Write something.."
-                        style="height:200px"></textarea>
+                        style="height:200px" required></textarea>
 
                     <input type="submit" value="Submit">
                 </form>
