@@ -6,7 +6,7 @@
     <script src="js/style.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/gif/png" href="img/profile-no-bg.png">
+    <link rel="icon" type="image/gif/png" href="public/img/profile-no-bg.png">
 
     <title>
         Vineel Sai
@@ -152,7 +152,7 @@
         </div>
         <div class="row card title-skills rounded">
             <div class="contact-column">
-                <form name="contact-form">
+                <form action="/mail" method="POST" name="contact-form">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" placeholder="Name" required>
 
@@ -160,8 +160,8 @@
                     <input type="email" id="email" name="email" placeholder="Email" class="email" required>
 
                     <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.."
-                        style="height:200px" required></textarea>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
+                        required></textarea>
 
                     <input type="submit" value="Submit">
                 </form>
