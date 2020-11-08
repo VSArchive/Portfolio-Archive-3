@@ -53,10 +53,11 @@ app.post('/mail', (req,res) => {
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
             console.log(error);
+            res.sendFile(__dirname + '/mailerror.html')
         } else {
             console.log('Email sent');
+            res.sendFile(__dirname + '/mailsent.html')
         }
-        res.sendFile(__dirname + '/mail.html')
     })
 })
 
