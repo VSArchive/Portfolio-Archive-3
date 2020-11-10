@@ -2,7 +2,9 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="public/css/style.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="public/js/style.js"></script>
     <script src="js/style.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +17,7 @@
 
 <body>
     <div id="navbar">
-        <a href="index.html" id="logo">Vineel Sai</a>
+        <a href="" id="logo">Vineel Sai</a>
         <div id="navbar-right">
             <a id="home-n" class="active" onclick="home()" href="#home">Home</a>
             <a id="about-n" onclick="about()" href="#about">About</a>
@@ -36,7 +38,13 @@
     <div onfocus="about()" onmouseover="about()" id="about">
         <div class="row card rounded" style="margin-top: 50px;">
             <div class="column-about-1">
-                <img src="img/profile.jpg" style="width: 100%;" class="container">
+                <img id="img" src="img/profile.jpg" style="width: 100%;" class="container">
+                <script>
+                    const url = window.location.href
+                    if (url.split(".")[1] == "github" || url.split(".")[1] == "github") {
+                        document.getElementById("img").src = "public/img/profile.jpg"
+                    }
+                </script>
             </div>
             <div class="column-about-2" style="padding-left: 20px;">
                 <p><span class="title-s">Name: </span> <span class="des">Vineel Sai</span></p>
