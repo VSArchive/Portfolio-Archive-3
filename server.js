@@ -1,6 +1,8 @@
 const express = require('express')
-const favicon = require('express-favicon')
+var favicon = require('serve-favicon')
 const nodemailer = require('nodemailer')
+const fs = require('fs')
+const path = require("path")
 require('dotenv').config()
 
 const app = express()
@@ -9,7 +11,7 @@ app.use(express.static('public'))
 app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/js', express.static(__dirname + 'public/js'))
 app.use('/img', express.static(__dirname + 'public/img'))
-app.use(favicon(__dirname + '/public/img/profile-no-bg.png'))
+app.use(favicon(path.join(__dirname + '/public/img/profile-no-bg.png')))
 
 app.use(
   express.urlencoded({
@@ -24,6 +26,18 @@ app.get('/', (req, res) => {
 
 app.get('/github', (req, res) => {
     res.redirect('https://github.com/vineelsai26')
+})
+
+app.get('/resume', function(req, res, next) {
+  let stream = fs.createReadStream('resume/resume.pdf')
+  let filename = "resume.pdf"
+
+  filename = encodeURIComponent(filename)
+
+  res.setHeader('Content-disposition', 'inline; filename="' + filename + '"')
+  res.setHeader('Content-type', 'application/pdf')
+
+  stream.pipe(res)
 })
 
 app.get('/playstore', (req, res) => {
