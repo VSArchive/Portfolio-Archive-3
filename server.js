@@ -75,6 +75,10 @@ app.post('/mail', (req,res) => {
     })
 })
 
+app.use((req, res) => {
+    res.status(404).sendFile(__dirname + '/404.html')
+})
+
 const port = process.env.PORT || 5000
 
 app.listen(port)
