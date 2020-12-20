@@ -13,11 +13,7 @@ app.use('/js', express.static(__dirname + 'public/js'))
 app.use('/img', express.static(__dirname + 'public/img'))
 app.use(favicon(path.join(__dirname + '/public/img/profile-no-bg.png')))
 
-app.use(
-  express.urlencoded({
-    extended: true
-  })
-)
+app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
 app.get('/', (req, res) => {
