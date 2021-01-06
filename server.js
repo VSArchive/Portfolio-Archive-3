@@ -7,6 +7,8 @@ require('dotenv').config()
 
 const app = express()
 
+app.set('view engine', 'ejs')
+
 app.use(express.static('public'))
 app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/js', express.static(__dirname + 'public/js'))
@@ -17,7 +19,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
+    res.render('index')
 })
 
 app.get('/github', (req, res) => {
@@ -63,16 +65,16 @@ app.post('/mail', (req,res) => {
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
             console.log(error)
-            res.sendFile(__dirname + '/mailerror.html')
+            res.render('mail', {success: false})
         } else {
             console.log('Email sent')
-            res.sendFile(__dirname + '/mailsent.html')
+            res.render('mail', {success: true})
         }
     })
 })
 
 app.use((req, res) => {
-    res.status(404).sendFile(__dirname + '/404.html')
+    res.status(404).render('404')
 })
 
 const port = process.env.PORT || 5000
