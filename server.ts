@@ -1,8 +1,8 @@
-const express = require('express')
+import express from 'express'
 var favicon = require('serve-favicon')
-const nodemailer = require('nodemailer')
-const fs = require('fs')
-const path = require("path")
+import nodemailer from 'nodemailer'
+import fs from 'fs'
+import path from "path"
 require('dotenv').config()
 
 const app = express()
