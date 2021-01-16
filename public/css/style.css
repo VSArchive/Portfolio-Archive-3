@@ -198,6 +198,11 @@ body {
     width: 50%;
 }
 
+.column-3 {
+    float: left;
+    width: 30%;
+}
+
 .column-projects {
     float: left;
     width: 23.33%;
