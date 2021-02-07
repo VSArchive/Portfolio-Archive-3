@@ -1,9 +1,12 @@
-import express from 'express'
+const express = require('express')
 var favicon = require('serve-favicon')
-import nodemailer from 'nodemailer'
-import fs from 'fs'
-import path from "path"
+const nodemailer = require('nodemailer')
+const fs = require('fs')
+const path = require('path')
+const wakeUpDyno = require('./wakeUpDyno.js')
 require('dotenv').config()
+
+const DYNO_URL = 'https://vineelsai.herokuapp.com'
 
 const app = express()
 
@@ -83,4 +86,6 @@ app.use((req, res) => {
 
 const port = process.env.PORT || 5000
 
-app.listen(port)
+app.listen(port, () => {
+    wakeUpDyno(DYNO_URL)
+})
