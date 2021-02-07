@@ -42,6 +42,10 @@ app.get('/playstore', (req, res) => {
     res.redirect('https://play.google.com/store/apps/dev?id=7899749311611474057')
 })
 
+app.get('/app-ads.txt', (req, res) => {
+    res.sendFile(path.join(__dirname, 'app-ads.txt'))
+})
+
 app.post('/mail', (req,res) => {
     const transporter = nodemailer.createTransport({
     service: 'gmail',
