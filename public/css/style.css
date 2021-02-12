@@ -361,6 +361,11 @@ input[type=submit]:hover {
         height: auto;
         padding: 0%;
     }
+
+    .column-3 {
+        float: left;
+        width: 40%;
+    }
     
     .column-about-1 {
         float: left;
@@ -440,5 +445,10 @@ input[type=submit]:hover {
         float: left;
         width: 90%;
         margin: 5%;
+    }
+
+    .column-3 {
+        float: left;
+        width: 60%;
     }
 }
