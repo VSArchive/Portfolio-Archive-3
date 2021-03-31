@@ -109,7 +109,7 @@ body {
 }
 
 #navbar-right a:hover {
-    background-color: dodgerblue;
+    background-color: rgb(0, 100, 200);
     color: white;
     animation-name: expand-width;
     animation-duration: 1s;
@@ -138,7 +138,7 @@ body {
 }
 
 #navbar-right a.active {
-    background-color: dodgerblue;
+    background-color: rgb(0, 100, 200);
     color: white;
 }
 
@@ -228,8 +228,9 @@ input[type=text], select, textarea, .email {
 }
 
 input[type=submit] {
-    background-color: rgb(0, 128, 255);
+    background-color: rgb(0, 100, 200);
     color: white;
+    font-weight: bolder;
     width: 100px;
     position: relative; left: 50%;
     -ms-transform: translate(-50%);
