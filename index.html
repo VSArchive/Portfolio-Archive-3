@@ -177,7 +177,7 @@
 		</div>
 		<div class="row card title-skills rounded">
 			<div class="contact-column">
-				<form action="/mail" method="POST" name="contact-form">
+				<form name="contact-form">
 					<label for="name">Your Name</label>
 					<input type="text" id="name" name="name" placeholder="Name" required>
 
@@ -187,11 +187,10 @@
 					<label for="subject">Subject</label>
 					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
 						required></textarea>
-
-					<div style="width: 100%;">
-						<input type="submit" value="Submit">
-					</div>
 				</form>
+				<div style="width: 100%;">
+					<button class="submit" onclick="mail()">Submit</button>
+				</div>
 			</div>
 			<div class="contact-column">
 				<p class="title" style="margin-top: 0px;">

@@ -1,6 +1,6 @@
 window.onscroll = function () { scrollFunction() }
 
-var TxtType = function (el, toRotate, period) {
+let TxtType = function (el, toRotate, period) {
 	this.toRotate = toRotate
 	this.el = el
 	this.loopNum = 0
@@ -11,8 +11,8 @@ var TxtType = function (el, toRotate, period) {
 }
 
 TxtType.prototype.tick = function () {
-	var i = this.loopNum % this.toRotate.length
-	var fullTxt = this.toRotate[i]
+	let i = this.loopNum % this.toRotate.length
+	let fullTxt = this.toRotate[i]
 
 	if (this.isDeleting) {
 		this.txt = fullTxt.substring(0, this.txt.length - 1)
@@ -22,8 +22,8 @@ TxtType.prototype.tick = function () {
 
 	this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>'
 
-	var that = this
-	var delta = 200 - Math.random() * 100
+	let that = this
+	let delta = 200 - Math.random() * 100
 
 	if (this.isDeleting) { delta /= 2 }
 
@@ -42,15 +42,15 @@ TxtType.prototype.tick = function () {
 }
 
 window.onload = function () {
-	var elements = document.getElementsByClassName('typewrite')
-	for (var i = 0; i < elements.length; i++) {
-		var toRotate = elements[i].getAttribute('data-type')
-		var period = elements[i].getAttribute('data-period')
+	let elements = document.getElementsByClassName('typewrite')
+	for (let i = 0; i < elements.length; i++) {
+		let toRotate = elements[i].getAttribute('data-type')
+		let period = elements[i].getAttribute('data-period')
 		if (toRotate) {
 			new TxtType(elements[i], JSON.parse(toRotate), period)
 		}
 	}
-	var css = document.createElement("style")
+	let css = document.createElement("style")
 	css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}"
 	document.body.appendChild(css)
 }
@@ -101,4 +101,30 @@ function contact() {
 	document.getElementById("home-n").classList.remove('active')
 	document.getElementById("skills-n").classList.remove('active')
 	document.getElementById("projects-n").classList.remove('active')
+}
+
+function mail() {
+	let request = new XMLHttpRequest();
+	request.open("POST", "https://discord.com/api/webhooks/842636632716214343/2FSz43xKnI9AiIpdlPVmhwjBEWuhkvrtwmlwhzINCKwOn6hGhUv__2ZtXvAgV7YmBZDT")
+
+	request.setRequestHeader('Content-type', 'application/json')
+
+	const name = document.getElementById("name").value
+	const email = document.getElementById("email").value
+	const subject = document.getElementById("subject").value
+
+	if (name.trim().length == 0 || email.trim().length == 0 || subject.trim().length == 0) {
+		alert("Please fill the from")
+	} else {
+		const content = "Name : " + name + "\n" + "Email : " + email + "\n" + "Subject : " + subject
+
+		let params = {
+			username: "Contact Form",
+			avatar_url: "https://raw.githubusercontent.com/vineelsai26/vineelsai26.github.io/main/img/profile.jpg",
+			content: content
+		}
+		request.send(JSON.stringify(params))
+
+		alert("Contact Successful, I will reach out to you soon")
+	}
 }
