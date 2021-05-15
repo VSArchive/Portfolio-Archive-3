@@ -113,8 +113,12 @@ function mail() {
 	const email = document.getElementById("email").value
 	const subject = document.getElementById("subject").value
 
+	const message = document.getElementById("message")
+
 	if (name.trim().length == 0 || email.trim().length == 0 || subject.trim().length == 0) {
-		alert("Please fill the from")
+		message.style.visibility = "visible"
+		message.style.color = "rgb(255, 0, 0)"
+		message.innerText = "Please Fill the form!"
 	} else {
 		const content = "Name : " + name + "\n" + "Email : " + email + "\n" + "Subject : " + subject
 
@@ -125,6 +129,8 @@ function mail() {
 		}
 		request.send(JSON.stringify(params))
 
-		alert("Contact Successful, I will reach out to you soon")
+		message.style.color = "rgb(0, 255, 0)"
+		message.style.visibility = "visible"
+		message.innerText = "Success"
 	}
 }

@@ -245,6 +245,13 @@ input[type=text], select, textarea, .email {
     background-color: rgb(0, 80, 160);
 }
 
+.message {
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(0, 255, 0);
+    visibility: hidden;
+}
+
 .row:after {
     content: "";
     display: table;
