@@ -1,7 +1,7 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import React from 'react';
-import axios from 'axios';
 
 export default function Home() {
 	return (
@@ -20,14 +20,14 @@ export default function Home() {
 
 			<main>
 				<div className={styles.navbar}>
-					<a href="/" id={styles.logo}>Vineel Sai</a>
+					<Link href="/" id={styles.logo}>Vineel Sai</Link>
 					<div className={styles.navbarRight}>
-						<a className={styles.active} href="#home">Home</a>
-						<a href="#about">About</a>
-						<a href="#skills">Skills</a>
-						<a href="#projects">Projects</a>
-						<a href="resume/resume.pdf">Resume</a>
-						<a href="#contact">Contact</a>
+						<Link className={styles.active} href="#home">Home</Link>
+						<Link href="#about">About</Link>
+						<Link href="#skills">Skills</Link>
+						<Link href="#projects">Projects</Link>
+						<Link href="resume/resume.pdf">Resume</Link>
+						<Link href="#contact">Contact</Link>
 					</div>
 				</div>
 
@@ -52,14 +52,14 @@ export default function Home() {
 									About me
 								</p>
 								<p className={styles.fontItalic}>
-									I am an undergraduate at <a href="https://iiitkalyani.ac.in">IIIT
-										Kalyani</a>, pursuing
+									I am an undergraduate at <Link href="https://iiitkalyani.ac.in">IIIT
+										Kalyani</Link>, pursuing
 									Bachelors in Computer
 									Science and Engineering. I am interested Android Developer and Web Developer currently trying
 									out game development with Unity.
 								</p>
-								<h6>Check out the blog that featured my game <a
-									href="https://gameskeys.net/under-the-radar-games-on-android-in-2021/">Flapping Fish</a>
+								<h6>Check out the blog that featured my game <Link
+									href="https://gameskeys.net/under-the-radar-games-on-android-in-2021/">Flapping Fish</Link>
 								</h6>
 							</div>
 						</div>
@@ -115,41 +115,41 @@ export default function Home() {
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
 							<h1>Android</h1>
 							<ul>
-								<li><a href="https://play.google.com/store/apps/details?id=com.vs.supermarket">SVS Market</a></li>
-								<li><a href="https://github.com/vineelsai26/IIIT-Kalyani">IIIT Kalyani</a></li>
-								<li><a href="https://github.com/vineelsai26/Paint">Paint</a></li>
-								<li><a href="https://github.com/vineelsai26/Take-Notes">Notes</a></li>
+								<li><Link href="https://play.google.com/store/apps/details?id=com.vs.supermarket">SVS Market</Link></li>
+								<li><Link href="https://github.com/vineelsai26/IIIT-Kalyani">IIIT Kalyani</Link></li>
+								<li><Link href="https://github.com/vineelsai26/Paint">Paint</Link></li>
+								<li><Link href="https://github.com/vineelsai26/Take-Notes">Notes</Link></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
 							<h1>Python</h1>
 							<ul>
-								<li><a href="https://github.com/vineelsai26/AmazonPriceTracker">Amazon Price Tracker</a></li>
-								<li><a href="https://github.com/vineelsai26/Twitter-Bot">Twitter Bot</a></li>
-								<li><a href="https://github.com/vineelsai26/Find-Temperature">Find Temperature</a></li>
-								<li><a href="https://github.com/vineelsai26/ADB-Exploit">ADB Exploit</a></li>
+								<li><Link href="https://github.com/vineelsai26/AmazonPriceTracker">Amazon Price Tracker</Link></li>
+								<li><Link href="https://github.com/vineelsai26/Twitter-Bot">Twitter Bot</Link></li>
+								<li><Link href="https://github.com/vineelsai26/Find-Temperature">Find Temperature</Link></li>
+								<li><Link href="https://github.com/vineelsai26/ADB-Exploit">ADB Exploit</Link></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
 							<h1>Java Script</h1>
 							<ul>
-								<li><a href="https://github.com/vineelsai26/Blog">Blog</a></li>
-								<li><a href="https://github.com/vineelsai26/F.R.I.D.A.Y-Bot">Telegram Bot</a></li>
-								<li><a href="https://github.com/vineelsai26/URL-Shortener">URL Shortener</a></li>
+								<li><Link href="https://github.com/vineelsai26/Blog">Blog</Link></li>
+								<li><Link href="https://github.com/vineelsai26/F.R.I.D.A.Y-Bot">Telegram Bot</Link></li>
+								<li><Link href="https://github.com/vineelsai26/URL-Shortener">URL Shortener</Link></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
 							<h1>Web</h1>
 							<ul>
-								<li><a href="https://github.com/vineelsai26/vineelsai26.github.io">This Website</a></li>
-								<li><a href="https://github.com/vineelsai26/Tic-Tac-Toe-Web">Tic Tac Toe</a></li>
-								<li><a href="https://github.com/vineelsai26/Sudoku-Web">Sudoku</a></li>
+								<li><Link href="https://github.com/vineelsai26/vineelsai26.github.io">This Website</Link></li>
+								<li><Link href="https://github.com/vineelsai26/Tic-Tac-Toe-Web">Tic Tac Toe</Link></li>
+								<li><Link href="https://github.com/vineelsai26/Sudoku-Web">Sudoku</Link></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
 							<h1>PHP</h1>
 							<ul>
-								<li><a href="https://github.com/vineelsai26/Billing-Website">Billing Website</a></li>
+								<li><Link href="https://github.com/vineelsai26/Billing-Website">Billing Website</Link></li>
 							</ul>
 						</div>
 					</div>
@@ -186,8 +186,8 @@ export default function Home() {
 								Contact Me
 							</h2>
 							<p className={styles.fontItalic}>
-								I am an undergraduate at <a href="https://iiitkalyani.ac.in">IIIT
-									Kalyani</a>, pursuing
+								I am an undergraduate at <Link href="https://iiitkalyani.ac.in">IIIT
+									Kalyani</Link>, pursuing
 								Bachelors in Computer
 								Science and Engineering.
 							</p>
