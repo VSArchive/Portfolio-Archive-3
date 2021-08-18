@@ -23,7 +23,7 @@ export default function Home() {
 
 			<main>
 				<div id="navbar" className={styles.navbar}>
-					<Link href="/" id="logo" className={styles.logo}>Vineel Sai</Link>
+					<Link href="/" id="logo">Vineel Sai</Link>
 					<div className={styles.navbarRight}>
 						<Link className={styles.active} href="#home">Home</Link>
 						<Link href="#about">About</Link>
@@ -41,7 +41,7 @@ export default function Home() {
 				<div id="about" className={styles.about}>
 					<div className={`${styles.row} ${styles.card} ${styles.rounded}`}>
 						<div className={styles.columnAbout1}>
-							<Image id="img" alt="profile" src={profileImg} className={`${styles.container}`} />
+							<Image id="img" alt="profile" src={profileImg} className={styles.container} />
 						</div>
 						<div className={styles.columnAbout2}>
 							<p><span className={styles.titles}>Name: </span> <span className={styles.des}>Vineel Sai</span></p>
@@ -137,6 +137,7 @@ export default function Home() {
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
 							<h1>Java Script</h1>
 							<ul>
+								<li><Link href="https://github.com/vineelsai26/vineelsai">This Website</Link></li>
 								<li><Link href="https://github.com/vineelsai26/Blog">Blog</Link></li>
 								<li><Link href="https://github.com/vineelsai26/F.R.I.D.A.Y-Bot">Telegram Bot</Link></li>
 								<li><Link href="https://github.com/vineelsai26/URL-Shortener">URL Shortener</Link></li>
@@ -145,7 +146,6 @@ export default function Home() {
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
 							<h1>Web</h1>
 							<ul>
-								<li><Link href="https://github.com/vineelsai26/vineelsai26.github.io">This Website</Link></li>
 								<li><Link href="https://github.com/vineelsai26/Tic-Tac-Toe-Web">Tic Tac Toe</Link></li>
 								<li><Link href="https://github.com/vineelsai26/Sudoku-Web">Sudoku</Link></li>
 							</ul>

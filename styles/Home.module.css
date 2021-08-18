@@ -20,12 +20,13 @@
 .navbar {
     background-color: transparent;
     padding: 20px 10px;
-    padding-inline-start: 60px;
+    padding-inline-start: 100px;
     padding-bottom: 15px;
     padding-top: 15px;
     position: fixed;
     width: 100%;
-}   
+    z-index: 100;
+}
 
 .navbar a {
     float: left;
@@ -37,13 +38,6 @@
     font-size: 18px; 
     line-height: 25px;
     border-radius: 4px;
-}
-
-.navbar .logo {
-    font-size: 30px;
-    padding-inline-start: 100px;
-    font-weight: bold;
-    transition: 0.4s;
 }
 
 .navbarRight {
@@ -188,6 +182,7 @@
     padding: 20px ;
     border-radius: 5px;
     width: 20%; 
+    z-index: 0;
 }
 
 .rounded {
@@ -226,15 +221,9 @@
     width: 25%;
     height: auto;
 }
-.aboutme {
-    float: left;
-    width: 50%;
-    height: auto;
-    padding: 0%;
-}
 
 .width100 {
-    width: 80%;
+    width: 100%;
 }
 
 .fontItalic {
