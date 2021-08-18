@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import React from 'react';
+import Image from 'next/image'
+import profileImg from '../public/img/profile.jpg'
 
 export default function Home() {
 	return (
@@ -16,28 +18,30 @@ export default function Home() {
 						Science and Engineering. I am a Android Developer and a Web Developer currently trying out game development with Unity" />
 				<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' />
 				<link rel="icon" type="image/gif/png" href="img/profile-no-bg.png" />
+				<script defer src="/js/style.js"></script>
 			</Head>
 
 			<main>
-				<div className={styles.navbar}>
-					<Link href="/" id={styles.logo}>Vineel Sai</Link>
+				<div id="navbar" className={styles.navbar}>
+					<Link href="/" id="logo" className={styles.logo}>Vineel Sai</Link>
 					<div className={styles.navbarRight}>
 						<Link className={styles.active} href="#home">Home</Link>
 						<Link href="#about">About</Link>
 						<Link href="#skills">Skills</Link>
 						<Link href="#projects">Projects</Link>
-						<Link href="resume/resume.pdf">Resume</Link>
+						<Link href="/resume/resume.pdf">Resume</Link>
 						<Link href="#contact">Contact</Link>
 					</div>
 				</div>
 
 				<div id="home" className={styles.parallax}>
+
 				</div>
 
 				<div id="about" className={styles.about}>
 					<div className={`${styles.row} ${styles.card} ${styles.rounded}`}>
 						<div className={styles.columnAbout1}>
-							<img id="img" alt="profile" src="img/profile.jpg" className={`${styles.width100} ${styles.container}`} />
+							<Image id="img" alt="profile" src={profileImg} className={`${styles.container}`} />
 						</div>
 						<div className={styles.columnAbout2}>
 							<p><span className={styles.titles}>Name: </span> <span className={styles.des}>Vineel Sai</span></p>
