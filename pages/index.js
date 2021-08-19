@@ -19,6 +19,16 @@ export default function Home() {
 				<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' />
 				<link rel="icon" type="image/gif/png" href="img/profile-no-bg.png" />
 				<script defer src="/js/style.js"></script>
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-WLKQWC1JPQ"></script>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+							window.dataLayer = window.dataLayer || []
+							function gtag() {dataLayer.push(arguments) }
+							gtag('js', new Date())
+							gtag('config', 'G-WLKQWC1JPQ')
+						`
+					}}/>
 			</Head>
 
 			<main>
