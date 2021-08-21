@@ -28,19 +28,19 @@ export default function Home() {
 							gtag('js', new Date())
 							gtag('config', 'G-WLKQWC1JPQ')
 						`
-					}}/>
+					}} />
 			</Head>
 
 			<main>
 				<div id="navbar" className={styles.navbar}>
 					<Link href="/" id="logo">Vineel Sai</Link>
 					<div className={styles.navbarRight}>
-						<Link className={styles.active} href="#home">Home</Link>
-						<Link href="#about">About</Link>
-						<Link href="#skills">Skills</Link>
-						<Link href="#projects">Projects</Link>
-						<Link href="/resume/resume.pdf">Resume</Link>
-						<Link href="#contact">Contact</Link>
+						<Link id="homeNav" className={styles.active} href="#home">Home</Link>
+						<Link id="aboutNav" href="#about">About</Link>
+						<Link id="skillsNav" href="#skills">Skills</Link>
+						<Link id="projectsNav" href="#projects">Projects</Link>
+						<Link id="resumeNav" href="/resume/resume.pdf">Resume</Link>
+						<Link id="contactNav" href="#contact">Contact</Link>
 					</div>
 				</div>
 
