@@ -17,7 +17,7 @@ export default function Home() {
 					content="Portfolio website of Vineel Sai I am an undergraduate at IIIT Kalyani, pursuing Bachelors in Computer
 						Science and Engineering. I am a Android Developer and a Web Developer currently trying out game development with Unity" />
 				<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' />
-				<link rel="icon" type="image/gif/png" href="img/profile-no-bg.png" />
+				<link rel="icon" type="image/gif/png" href="img/logo.png" />
 				<script defer src="/js/style.js"></script>
 				<script async src="https://www.googletagmanager.com/gtag/js?id=G-WLKQWC1JPQ"></script>
 				<script
@@ -57,7 +57,7 @@ export default function Home() {
 							<p><span className={styles.titles}>Name: </span> <span className={styles.des}>Vineel Sai</span></p>
 							<p><span className={styles.titles}>Profile: </span> <span className={styles.des}>Android
 								Developer</span></p>
-							<p><span className={styles.titles}>Email: </span> <span className={styles.des}>vineelsai26@gmail.com</span></p>
+							<p><span className={styles.titles}>Email: </span> <span className={styles.des}>mail@vineelsai.com</span></p>
 							<p><span className={styles.titles}>Phone: </span> <span className={styles.des}>9390345080</span></p>
 						</div>
 						<div className={styles.columnAbout3}>
@@ -72,9 +72,6 @@ export default function Home() {
 									Science and Engineering. I am interested Android Developer and Web Developer currently trying
 									out game development with Unity.
 								</p>
-								<h6>Check out the blog that featured my game <Link
-									href="https://gameskeys.net/under-the-radar-games-on-android-in-2021/">Flapping Fish</Link>
-								</h6>
 							</div>
 						</div>
 					</div>
@@ -133,6 +130,13 @@ export default function Home() {
 								<li><Link href="https://github.com/vineelsai26/IIIT-Kalyani">IIIT Kalyani</Link></li>
 								<li><Link href="https://github.com/vineelsai26/Paint">Paint</Link></li>
 								<li><Link href="https://github.com/vineelsai26/Take-Notes">Notes</Link></li>
+							</ul>
+						</div>
+						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
+							<h1>Unity</h1>
+							<ul>
+								<li><Link href="https://github.com/vineelsai26/Flappy-Bird">Flappy Bird</Link></li>
+								<li><Link href="https://github.com/vineelsai26/Space-Invaders">Space Invaders</Link></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
