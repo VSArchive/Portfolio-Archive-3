@@ -58,7 +58,6 @@ export default function Home() {
 							<p><span className={styles.titles}>Profile: </span> <span className={styles.des}>Android
 								Developer</span></p>
 							<p><span className={styles.titles}>Email: </span> <span className={styles.des}>mail@vineelsai.com</span></p>
-							<p><span className={styles.titles}>Phone: </span> <span className={styles.des}>9390345080</span></p>
 						</div>
 						<div className={styles.columnAbout3}>
 							<div>
