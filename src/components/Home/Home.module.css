@@ -1,5 +1,5 @@
 .parallax {
-    background-image: url("/img/background.jpg");
+    background-image: url("../../assets/background.jpg");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -155,7 +155,12 @@
     text-align: center;
     margin-top: 0px;
     color: rgb(0, 255, 0);
-    visibility: hidden;
+}
+
+.messageError {
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(255, 0, 0);
 }
 
 .row:after {
@@ -170,9 +175,8 @@
 
 .container {
     float: left;
-    padding: 20px ;
     border-radius: 5px;
-    width: 20%; 
+    width: 100%; 
     z-index: 0;
 }
 
@@ -225,6 +229,32 @@
     padding: 0px;
 }
 
+.float{
+    position: fixed;
+    visibility: hidden;
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.myFloat{
+  	margin-top:15px;
+}
+
+.myFloat :hover{
+  	color: red;
+}
+
+.typewrite {
+    padding-top: 50vh; 
+    margin: 0; 
+    text-align: center; 
+    color: white;
+}
+
 @media screen and (max-width: 1100px) {
     .navbar a.logo{
         float: none;
@@ -237,12 +267,6 @@
 }
 
 @media screen and (max-width: 900px) {
-    .container {
-        float: initial;
-        width: 50%;
-        padding: 20px ;
-        border-radius: 30px;
-    }
     .box {
         float: right;
         width: 50%;
@@ -328,12 +352,6 @@
     .navbarRight a:hover {
         width: 0px;
         height: 0px;
-    }
-    .container {
-        float: initial;
-        width: 50%;
-        padding: 20px ;
-        border-radius: 30px;
     }
     .box {
         float: initial;
