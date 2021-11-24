@@ -2,20 +2,12 @@ import React from 'react'
 import styles from './Home.module.css'
 import { useLocation } from 'react-router-dom'
 
-import Typewriter from 'typewriter-effect/dist/core'
+import Typewriter from 'typewriter-effect'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 export default function Home() {
-    const typewriter = document.getElementById("typewriter")
-    new Typewriter(typewriter, {
-        strings: ["Hi, I am Vineel Sai", "I am a Android Developer", "I am a Web Developer"],
-        autoStart: true,
-        loop: true,
-        delay: 75,
-    })
-
     const location = useLocation().pathname
     let errorForm = false
     let successForm = false
@@ -46,6 +38,12 @@ export default function Home() {
 
             <div id="home" className={styles.parallax}>
                 <p id="typewriter" className={styles.typewrite}>
+                    <Typewriter
+                        options={{
+                            strings: ["Hi, I am Vineel Sai", "I am an Android Developer", "I am a Web Developer"],
+                            autoStart: true,
+                            loop: true,
+                        }} />
                 </p>
             </div>
 
