@@ -4,7 +4,8 @@ import { useLocation } from 'react-router-dom'
 
 import Typewriter from 'typewriter-effect/dist/core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUp, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 export default function Home() {
     const typewriter = document.getElementById("typewriter")
@@ -209,6 +210,27 @@ export default function Home() {
                             Bachelors in Computer
                             Science and Engineering.
                         </p>
+                        <a className={styles.social} href="https://facebook.com/vineelsai26">
+                            <FontAwesomeIcon icon={brands('facebook')} />
+                        </a>
+                        <a className={styles.social} href="https://twitter.com/vineelsai26">
+                            <FontAwesomeIcon icon={brands('twitter')} />
+                        </a>
+                        <a className={styles.social} href="https://instagram.com/vineelsai26">
+                            <FontAwesomeIcon icon={brands('instagram')} />
+                        </a>
+                        <a className={styles.social} href="https://linkedin.com/in/vineelsai26">
+                            <FontAwesomeIcon icon={brands('linkedin')} />
+                        </a>
+                        <a className={styles.social} href="https://github.com/vineelsai26">
+                            <FontAwesomeIcon icon={brands('github')} />
+                        </a>
+                        <a className={styles.social} href="https://vstech.medium.com">
+                            <FontAwesomeIcon icon={brands('medium')} />
+                        </a>
+                        <a className={styles.social} href="mailto:mail@vineelsai.com">
+                            <FontAwesomeIcon icon={faEnvelope} />
+                        </a>
                     </div>
                 </div>
             </div>

@@ -255,6 +255,11 @@
     color: white;
 }
 
+.social {
+    padding: 10px;
+    margin: 10px;
+}
+
 @media screen and (max-width: 1100px) {
     .navbar a.logo{
         float: none;
