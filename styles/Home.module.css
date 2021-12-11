@@ -1,5 +1,5 @@
 .parallax {
-    background-image: url("../../assets/background.jpg");
+    background-image: url("../public/img/background.jpg");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
