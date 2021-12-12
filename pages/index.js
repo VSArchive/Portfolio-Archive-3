@@ -2,9 +2,10 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 import Typewriter from 'typewriter-effect'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faArrowUp, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-// import { brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUp, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faTwitter, faInstagram, faLinkedin, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
 
 export default function Home() {
 	return (
@@ -20,13 +21,6 @@ export default function Home() {
 
 				<title>Vineel Sai</title>
 				<script defer src="/js/style.js"></script>
-				{/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLKQWC1JPQ"></script> */}
-				{/* <script>
-					window.dataLayer = window.dataLayer || []
-					function gtag() {dataLayer.push(arguments)}
-					gtag('js', new Date())
-					gtag('config', 'G-WLKQWC1JPQ')
-				</script> */}
 			</Head>
 			<main>
 				<div id="navbar" className={styles.navbar}>
@@ -42,7 +36,7 @@ export default function Home() {
 				</div>
 
 				<a id="fab" href="#home" className={styles.float}>
-					{/* <FontAwesomeIcon id="upArrow" className={styles.myFloat} icon={faArrowUp} /> */}
+					<FontAwesomeIcon id="upArrow" className={styles.myFloat} icon={faArrowUp} />
 				</a>
 
 				<div id="home" className={styles.parallax}>
@@ -215,27 +209,27 @@ export default function Home() {
 								Bachelors in Computer
 								Science and Engineering.
 							</p>
-							{/* <a className={styles.social} href="https://facebook.com/vineelsai26">
-								<FontAwesomeIcon icon={brands('facebook')} />
+							<a className={styles.social} href="https://facebook.com/vineelsai26">
+								<FontAwesomeIcon icon={faFacebook} />
 							</a>
 							<a className={styles.social} href="https://twitter.com/vineelsai26">
-								<FontAwesomeIcon icon={brands('twitter')} />
+								<FontAwesomeIcon icon={faTwitter} />
 							</a>
 							<a className={styles.social} href="https://instagram.com/vineelsai26">
-								<FontAwesomeIcon icon={brands('instagram')} />
+								<FontAwesomeIcon icon={faInstagram} />
 							</a>
 							<a className={styles.social} href="https://linkedin.com/in/vineelsai26">
-								<FontAwesomeIcon icon={brands('linkedin')} />
+								<FontAwesomeIcon icon={faLinkedin} />
 							</a>
 							<a className={styles.social} href="https://github.com/vineelsai26">
-								<FontAwesomeIcon icon={brands('github')} />
+								<FontAwesomeIcon icon={faGithub} />
 							</a>
 							<a className={styles.social} href="https://vstech.medium.com">
-								<FontAwesomeIcon icon={brands('medium')} />
+								<FontAwesomeIcon icon={faMedium} />
 							</a>
 							<a className={styles.social} href="mailto:mail@vineelsai.com">
 								<FontAwesomeIcon icon={faEnvelope} />
-							</a> */}
+							</a>
 						</div>
 					</div>
 				</div>
