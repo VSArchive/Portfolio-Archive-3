@@ -30,7 +30,7 @@ export default function Home() {
 						<a id="aboutNav" href="#about">About</a>
 						<a id="skillsNav" href="#skills">Skills</a>
 						<a id="projectsNav" href="#projects">Projects</a>
-						<a id="resumeNav" href="/resume/resume.pdf">Resume</a>
+						<a id="resumeNav" href="https://vineelsai.com/resume/resume.pdf">Resume</a>
 						<a id="contactNav" href="#contact">Contact</a>
 					</div>
 				</div>
@@ -67,7 +67,7 @@ export default function Home() {
 									About me
 								</p>
 								<p className={styles.fontItalic}>
-									I am an undergraduate at <a href="https://iiitkalyani.ac.in">IIIT
+									I am an undergraduate at <a href="https://redirect.vineelsai.com/iiitkalyani">IIIT
 										Kalyani</a>, pursuing
 									Bachelors in Computer
 									Science and Engineering. I am interested Android Developer and Web Developer currently trying
@@ -128,47 +128,47 @@ export default function Home() {
 							<h1>Android</h1>
 							<ul>
 								<li><a href="https://play.google.com/store/apps/details?id=com.vs.supermarket">SVS Market</a></li>
-								<li><a href="https://github.com/vineelsai26/IIIT-Kalyani">IIIT Kalyani</a></li>
-								<li><a href="https://github.com/vineelsai26/Paint">Paint</a></li>
-								<li><a href="https://github.com/vineelsai26/Take-Notes">Notes</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/IIIT-Kalyani">IIIT Kalyani</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/Paint">Paint</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/Take-Notes">Notes</a></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
 							<h1>Unity</h1>
 							<ul>
-								<li><a href="https://github.com/vineelsai26/Flappy-Bird">Flappy Bird</a></li>
-								<li><a href="https://github.com/vineelsai26/Space-Invaders">Space Invaders</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/Flappy-Bird">Flappy Bird</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/Space-Invaders">Space Invaders</a></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
 							<h1>Python</h1>
 							<ul>
-								<li><a href="https://github.com/vineelsai26/AmazonPriceTracker">Amazon Price Tracker</a></li>
-								<li><a href="https://github.com/vineelsai26/Twitter-Bot">Twitter Bot</a></li>
-								<li><a href="https://github.com/vineelsai26/Find-Temperature">Find Temperature</a></li>
-								<li><a href="https://github.com/vineelsai26/ADB-Exploit">ADB Exploit</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/AmazonPriceTracker">Amazon Price Tracker</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/Twitter-Bot">Twitter Bot</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/Find-Temperature">Find Temperature</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/ADB-Exploit">ADB Exploit</a></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
 							<h1>Java Script</h1>
 							<ul>
-								<li><a href="https://github.com/vineelsai26/vineelsai">This Website</a></li>
-								<li><a href="https://github.com/vineelsai26/Blog">Blog</a></li>
-								<li><a href="https://github.com/vineelsai26/F.R.I.D.A.Y-Bot">Telegram Bot</a></li>
-								<li><a href="https://github.com/vineelsai26/URL-Shortener">URL Shortener</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/vineelsai">This Website</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/Blog">Blog</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/F.R.I.D.A.Y-Bot">Telegram Bot</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/URL-Shortener">URL Shortener</a></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
 							<h1>Web</h1>
 							<ul>
-								<li><a href="https://github.com/vineelsai26/Tic-Tac-Toe-Web">Tic Tac Toe</a></li>
-								<li><a href="https://github.com/vineelsai26/Sudoku-Web">Sudoku</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/Tic-Tac-Toe-Web">Tic Tac Toe</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/Sudoku-Web">Sudoku</a></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
 							<h1>PHP</h1>
 							<ul>
-								<li><a href="https://github.com/vineelsai26/Billing-Website">Billing Website</a></li>
+								<li><a href="https://redirect.vineelsai.com/github/Billing-Website">Billing Website</a></li>
 							</ul>
 						</div>
 					</div>
@@ -184,7 +184,7 @@ export default function Home() {
 					</div>
 					<div className={`${styles.row} ${styles.card} ${styles.titleSkills} ${styles.rounded}`}>
 						<div className={styles.contactColumn}>
-							<form method="GET" action="https://contact.vineelsai.workers.dev/contact">
+							<form method="GET" action="contact">
 								<label htmlFor="name">Your Name</label>
 								<input type="text" id="name" name="name" placeholder="Name" required />
 
@@ -204,27 +204,27 @@ export default function Home() {
 								Contact Me
 							</h2>
 							<p className={styles.fontItalic}>
-								I am an undergraduate at <a href="https://iiitkalyani.ac.in">IIIT
+								I am an undergraduate at <a href="https://redirect.vineelsai.com/iiitkalyani">IIIT
 									Kalyani</a>, pursuing
 								Bachelors in Computer
 								Science and Engineering.
 							</p>
-							<a className={styles.social} href="https://facebook.com/vineelsai26">
+							<a className={styles.social} href="https://redirect.vineelsai.com/facebook">
 								<FontAwesomeIcon icon={faFacebook} />
 							</a>
-							<a className={styles.social} href="https://twitter.com/vineelsai26">
+							<a className={styles.social} href="https://redirect.vineelsai.com/twitter">
 								<FontAwesomeIcon icon={faTwitter} />
 							</a>
-							<a className={styles.social} href="https://instagram.com/vineelsai26">
+							<a className={styles.social} href="https://redirect.vineelsai.com/instagram">
 								<FontAwesomeIcon icon={faInstagram} />
 							</a>
-							<a className={styles.social} href="https://linkedin.com/in/vineelsai26">
+							<a className={styles.social} href="https://redirect.vineelsai.com/linkedin">
 								<FontAwesomeIcon icon={faLinkedin} />
 							</a>
-							<a className={styles.social} href="https://github.com/vineelsai26">
+							<a className={styles.social} href="https://redirect.vineelsai.com/github">
 								<FontAwesomeIcon icon={faGithub} />
 							</a>
-							<a className={styles.social} href="https://vstech.medium.com">
+							<a className={styles.social} href="https://redirect.vineelsai.com/vstech">
 								<FontAwesomeIcon icon={faMedium} />
 							</a>
 							<a className={styles.social} href="mailto:mail@vineelsai.com">
