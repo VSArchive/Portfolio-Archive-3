@@ -14,8 +14,9 @@ export default function Home() {
 				<link rel="icon" href="/img/logo.png" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta name="Description"
-					content="Portfolio website of Vineel Sai I am an undergraduate at IIIT Kalyani, pursuing Bachelors in Computer
-    						Science and Engineering. I am a Android Developer and a Web Developer currently trying out game development with Unity" />
+					content="Portfolio website of Vineel Sai. Hello, I am currently pursuing a bachelor's degree in Computer Science and Engineering at IIIT Kalyani. I'm interested in Android and Web development, and 
+									I enjoy self-hosting my projects on various cloud providers such as AWS, Azure, Google Cloud Platform, Oracle Cloud, and other platforms. Docker, Kubernetes, 
+									and other CI/CD and deployment-related applications also pique my interest." />
 				<link rel="apple-touch-icon" href="/img/logo.png" />
 				<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' />
 
@@ -26,10 +27,9 @@ export default function Home() {
 				<div id="navbar" className={styles.navbar}>
 					<a href="/" id="logo">Vineel Sai</a>
 					<div className={styles.navbarRight}>
-						<a id="homeNav" className={styles.active} href="#home">Home</a>
-						<a id="aboutNav" href="#about">About</a>
-						<a id="skillsNav" href="#skills">Skills</a>
+						<a id="homeNav" href="#home">Home</a>
 						<a id="projectsNav" href="#projects">Projects</a>
+						<a id="blogNav" href="https://vineelsai.com">Blog</a>
 						<a id="resumeNav" href="https://vineelsai.com/resume/resume.pdf">Resume</a>
 						<a id="contactNav" href="#contact">Contact</a>
 					</div>
@@ -50,71 +50,7 @@ export default function Home() {
 					</p>
 				</div>
 
-				<div id="about" className={styles.about}>
-					<div className={`${styles.row} ${styles.card} ${styles.rounded}`}>
-						<div className={styles.columnAbout1}>
-							<img id="img" alt="profile" src={'/img/profile.jpg'} className={styles.container}></img>
-						</div>
-						<div className={styles.columnAbout2}>
-							<p><span className={styles.titles}>Name: </span> <span className={styles.des}>Vineel Sai</span></p>
-							<p><span className={styles.titles}>Profile: </span> <span className={styles.des}>Android
-								Developer</span></p>
-							<p><span className={styles.titles}>Email: </span> <span className={styles.des}>mail@vineelsai.com</span></p>
-						</div>
-						<div className={styles.columnAbout3}>
-							<div>
-								<p className={styles.title}>
-									About me
-								</p>
-								<p className={styles.fontItalic}>
-									I am an undergraduate at <a href="https://redirect.vineelsai.com/iiitkalyani">IIIT
-										Kalyani</a>, pursuing
-									Bachelors in Computer
-									Science and Engineering. I am interested Android Developer and Web Developer currently trying
-									out game development with Unity.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div id="skills" className={styles.skills}>
-					<div>
-						<h3 className={styles.title}>
-							Skills
-						</h3>
-						<p className={styles.fontItalic}>These are the things I am
-							good at.</p>
-					</div>
-					<div className={`${styles.row} ${styles.card} ${styles.titleSkills} ${styles.rounded}`}>
-						<ul className={styles.column3}>
-							<li>C/C++</li>
-							<li>Java</li>
-							<li>Kotlin</li>
-							<li>Python</li>
-							<li>Java Script</li>
-						</ul>
-
-						<ul className={styles.column3}>
-							<li>Html</li>
-							<li>CSS</li>
-							<li>PHP</li>
-							<li>Android</li>
-							<li>Django</li>
-						</ul>
-
-						<ul className={styles.column3}>
-							<li>SQL</li>
-							<li>MongoDB</li>
-							<li>Node Js</li>
-							<li>Linux</li>
-							<li>Bash</li>
-						</ul>
-					</div>
-				</div>
-
 				<div id="projects" className={styles.projects}>
-
 					<div>
 						<h3 className={styles.title}>
 							Projects
@@ -125,50 +61,58 @@ export default function Home() {
 
 					<div className={styles.row}>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
-							<h1>Android</h1>
+							<h1 className={styles.centerHeading}>Android</h1>
 							<ul>
-								<li><a href="https://play.google.com/store/apps/details?id=com.vs.supermarket">SVS Market</a></li>
-								<li><a href="https://redirect.vineelsai.com/github/IIIT-Kalyani">IIIT Kalyani</a></li>
-								<li><a href="https://redirect.vineelsai.com/github/Paint">Paint</a></li>
-								<li><a href="https://redirect.vineelsai.com/github/Take-Notes">Notes</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Shopping-App">SVS Market</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/IIIT-Kalyani">IIIT Kalyani</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Paint">Paint</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Take-Notes">Notes</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Root-Checker">Root Checker</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Camera">Camera</a></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
-							<h1>Unity</h1>
+							<h1 className={styles.centerHeading}>Python</h1>
 							<ul>
-								<li><a href="https://redirect.vineelsai.com/github/Flappy-Bird">Flappy Bird</a></li>
-								<li><a href="https://redirect.vineelsai.com/github/Space-Invaders">Space Invaders</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/AmazonPriceTracker">Amazon Price Tracker</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Twitter-Bot">Twitter Bot</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Discord-Bot">Discord Bot</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Custom-Rom-Builder">Custom Rom Builder</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Find-Temperature">Find Temperature</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/ADB-Exploit">ADB Exploit</a></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
-							<h1>Python</h1>
+							<h1 className={styles.centerHeading}>Java Script</h1>
 							<ul>
-								<li><a href="https://redirect.vineelsai.com/github/AmazonPriceTracker">Amazon Price Tracker</a></li>
-								<li><a href="https://redirect.vineelsai.com/github/Twitter-Bot">Twitter Bot</a></li>
-								<li><a href="https://redirect.vineelsai.com/github/Find-Temperature">Find Temperature</a></li>
-								<li><a href="https://redirect.vineelsai.com/github/ADB-Exploit">ADB Exploit</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Balance-Sheet-Generator">Balance Sheet Generator</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Algo">Algorithm Visualizer</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Telegram-Bot">Telegram Bot</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Portfolio">This Website</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Shortify">Shortify</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Blog">Blog</a></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
-							<h1>Java Script</h1>
+							<h1 className={styles.centerHeading}>Unity</h1>
 							<ul>
-								<li><a href="https://redirect.vineelsai.com/github/vineelsai">This Website</a></li>
-								<li><a href="https://redirect.vineelsai.com/github/Blog">Blog</a></li>
-								<li><a href="https://redirect.vineelsai.com/github/F.R.I.D.A.Y-Bot">Telegram Bot</a></li>
-								<li><a href="https://redirect.vineelsai.com/github/URL-Shortener">URL Shortener</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Flappy-Bird">Flappy Bird</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Space-Invaders">Space Invaders</a></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
-							<h1>Web</h1>
+							<h1 className={styles.centerHeading}>Web</h1>
 							<ul>
-								<li><a href="https://redirect.vineelsai.com/github/Tic-Tac-Toe-Web">Tic Tac Toe</a></li>
-								<li><a href="https://redirect.vineelsai.com/github/Sudoku-Web">Sudoku</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Billing-Website">Billing Website</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Tic-Tac-Toe-Web">Tic Tac Toe</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/Sudoku-Web">Sudoku</a></li>
 							</ul>
 						</div>
 						<div className={`${styles.columnProjects} ${styles.card} ${styles.rounded} ${styles.des}`}>
-							<h1>PHP</h1>
+							<h1 className={styles.centerHeading}>Other</h1>
 							<ul>
-								<li><a href="https://redirect.vineelsai.com/github/Billing-Website">Billing Website</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/SDMS">SDMS</a></li>
+								<li><a className={styles.removeUnderline} href="https://redirect.vineelsai.com/github/vscoder">VSCoder Theme</a></li>
 							</ul>
 						</div>
 					</div>
